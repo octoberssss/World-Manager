@@ -41,7 +41,6 @@ func (m *WorldManager) LoadWorldFromPath(worldname string) error {
 	}
 
 	folder := m.Path + "/" + worldname
-	fmt.Println("Folder:", folder)
 	worldData, err := mcdb.Config.Open(mcdb.Config{
 		BlockSize:   16 * opt.KiB,
 		Compression: opt.DefaultCompression,
